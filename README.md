@@ -6,7 +6,7 @@ YEGON C JOHNSTONE
 
 ## Description
 
-Its a website that expalins more about my Dairy Business
+Its a website that assist a farmer to take into account all the eggs produce by his/her hens, it anable the farmer to calculate the eggs and sales production in the cause of the day, week and the whole year. 
 
 ### Prerequisites
 
