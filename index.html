@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Egg production calcutor</title>
+</head>
+<body>
+    <h1>JOWIYE POULTRY FARM</h1>
+  <script src="index.js"></script>
+    <div id="container"> 
+
+        <div id="farmname">
+            <h4 class="e1">CALCULATION AS PER PRODUCTION</h4>
+        </div>
+
+        <h3 class="my-user">Inputs:</h3>
+        <p class="">Production per hens, in every chicken coop.</p>
+        <div class="">
+          <form action="">
+            <div class="chicken_coop">
+                <span class="" id="inPutShade">Hens in chicken coop A</span>
+                <input id="chicken_coop_A" type="text"placeholder="0.00 Eggs." >
+            </div>
+            <div class="">
+                <span class="chicken_coop" id="inPutShade">Hens in chicken coop B </span>
+                <input id="chicken_coop_B" type="text" placeholder="0.00 Eggs">
+            </div>
+            <div class="lea">
+                <span class="chicken_coop" id="inPutShade">Hens in chicken coop C</span>
+                <input id="chicken_coop_C" type="text" placeholder="0.00 Eggs">
+            </div>
+            <div class=""> 
+                <span class="chicken_coop" id="inPutShade">Hens in chicken coop D.</span>
+                <input id="chicken_coop_D" type="text" placeholder="0.00 Eggs">
+            </div>
+            <input type="button" onClick="production()" Value="Calculate" />
+          </form>
+            
+          </div>
+
+          <h2 class="Daily"> Daily Earnings</h2>
+              Your production in chicken coop A is <span id="chicken_coop_a"></span> eggs per day <br>
+
+              Your production in chicken coop B is <span id="chicken_coop_b"></span> eggs per day <br>
+
+              Your production in chicken coop C is <span id="chicken_coop_c"></span> eggs per day <br>
+          
+              Your production in chicken coop D is <span id="chicken_coop_d"></span> eggs per day <br>
+              The total production is <span id="total"></span> eggs per day
+              
+              <p>Buying rates and days</p>
+              <div class="">
+                <form action="">
+                  <div class="chicken_coop">
+                    <span class="jowiye" id="inPutShade">Buying Rate</span>
+                    <input id="buying_rate" type="text" placeholder="0.00 shs.">
+                </div>
+                <div class="">
+                    <span class="chicken_coop" id="inPutShade">Total eggs</span>
+                    <input id="totaleggs" type="text" placeholder="0.00 days.">
+                </div>
+        
+              <input type="button" onClick="evaluation()" Value="Calculate" />
+                </form>
+              </div>
+                    Your weekly income is Ksh <span id = "weekly"></span> <br>
+                    Your monthly income is Ksh <span id = "monthly"></span><br>
+                    Your yearly income is Ksh <span id = "yearly"></span><br>
+         <div class="">
+            <h2 class="cr">Monthly Feedback</h2>
+            <p class="" id="farm_earnings"></p>
+         </div>
+        
+          <br><hr>
+          <h2 class="cr">Yearly Feedback</h2>
+          <form action="">
+            Total Eggs<input type="text" id="eggs">
+            <input type="button" onClick="annual()" Value="GENERATE" />
+          </form>
+          <span id="year"></span>
+          <ul id="annual_report">
+          </ul>
+           <document.getElementById('annual_report').innerHTML = `Total income for ${month} is: ${(days_in_months[month] * total_production) * buying_rate}`;>
+          <br><hr>
+        
+        <footer>
+        
+          <p>
+            <a href="https://web.facebook.com/johnstone.yegon.3" class="fa fa-facebook"></a>
+            <a href="https://web.whatsapp.com/" class="fa fa-whatsapp"></a>
+            <a href="https://www.instagram.com/yegonjohnstone/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/king512138460" class="fa fa-twitter"></a>
+          </p>
+        
+          <br>
+          <div class="">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <div style="color:#ffffff;" class="wow fadeInUp footer-copyright">
+                  <p>MADE BY YEGON <br>
+                    Copyright &copy; poultry farm </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div> 
+
+    </div>
+</body>
+</html>
