@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Egg calcutator || JOWIYE FARM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="icon">
+                <img src="assets/images/" alt="">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="container">
+            <div id="dailyeggs">
+                <h2>Egg Produce By coop</h2>
+                 <form>
+                    CHICKEN_COOP A: <input type="text" id="firstcoop" /><br>
+                    CHICKEN_COOP B: <input type="text" id="secondcoop" /><br>
+                    CHICKEN_COOP C: <input type="text" id="thirdcoop" /><br>
+                    CHICKEN_COOP D: <input type="text" id="forthcoop" /><br>
+                    <input type="button" onClick="eggsfunction()" Value="Generate Report" />
+                    <input class="button" type="button" value="Reset" onclick="reset()">
+                 </form>
+                 <div id="hidden">
+                    <h3>Summary Report for production today</h3>
+                    <p>Your production in coop A is <span id = "coop1"></span> eggs per day</p>
+                    <p>Your production in coop B is <span id = "coop2"></span> eggs per day</p>
+                    <p>Your production in coop C is <span id = "coop3"></span> eggs per day</p>
+                    <p>Your production in coop D is <span id = "coop4"></span> eggs per day</p>
+                    <b>The total production is <span id="totaleggs"></span> eggs per day</b>
+                </div>
+                    <script src="javascript.js"></script>
+            </div>
+            <div id="projection">
+                <h2>Our Weekly, Monthly and Yearly Projections</h2>
+                <p>Enter today's production below to calculate our projections</p>
+                <form>
+                    TODAY'S TOTAL PRODUCTION : <input type="text" id="eggs" /><br>
+                    <input type="button" onClick="projection()" Value="Generate Report" />
+                    <input class="button" type="button" value="Reset" onclick="reset()">
+                 </form>
+                 <div id="hidden2">
+                    <h3>Report on expected income projection</h3>
+                    <p>Your weekly income will be Ksh <span id = "weekly"></span> </p>
+                    <p>Your monthly income will be Ksh <span id = "monthly"></span></p>
+                    <p>Your yearly income will be Ksh <span id = "yearly"></span></p>
+                </div>
+            </div>
+            <div id="yearrevenue">
+                <h2>Whole Year Projection on monthly basis</h2>
+                <p>Enter today's production below to calculate Whole Year  projections</p>
+                <form>
+                    TODAY'S TOTAL PRODUCTION : <input type="text" id="total" /><br>
+                    <input type="button" onClick="revenue()" Value="Generate Report" />
+                    <input class="button" type="button" value="Reset" onclick="reset()">
+                 </form>
+                 <div id="hidden3">
+                    <h3>Report on expected income projection for the whole in in monthly basis</h3>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="menulink">
+                <h2>Jowiye farm</h2>
+            </div>
+            <div id="slogan">
+                <span><strong>Egg </strong> for a strong proteins</span>
+            </div>
+            <div id="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/ "  target="_blank"><img src="assets/images/facebook-512.webp" width="40px" height="40px" alt=""></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="assets/images/twitter_circle-512.webp" alt=""width="40px" height="40px"></a></li>
+                    <li><a href="" target="_blank"><img src="assets/images/gmail.webp" alt=""width="40px" height="40px"></a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p>2022 JOWIYE POULTRY FARM</p>
+            </div>
+        </div>
+    </body>
+</html>
